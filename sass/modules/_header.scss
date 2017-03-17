@@ -1,0 +1,68 @@
+#header{
+   .navigation{
+      float: right;
+      ul{
+         float: right;
+         li{
+            position: relative;
+            overflow: hidden;
+            height: 38px;
+            padding: 0 11px 13px 0px;
+            display: inline-block;
+            font-size: 1.2em;
+            &.hidden{
+               display: none;
+            }
+            span{
+               display: block;
+               font-size: 0.8em;
+            }
+         }
+      }
+   }
+}
+
+.logo{
+   position: absolute;
+   z-index: 100;
+   top: 0;
+}
+
+#utility-nav {
+    background: #e4e4e4;
+    height: 30px;
+    position: relative;
+    z-index: 6;
+    display: block;
+    #TopMenu{
+      float: right;
+      position: relative;
+      #utils-nav{
+         li{
+            display: inline;
+            font-family: Georgia,Times,"Times New Roman", serif;
+            &::after{
+               content: '/';
+            }
+         }
+      }
+   }
+}
+
+#searchlogin{
+   float: right;
+   .search, .login{
+      position: relative;
+      display: inline;
+   }
+   .search{
+      #searchform{
+         // input{
+         //    width: 50px;
+         // }
+      }
+      > *{
+         display: inline;
+      }
+   }
+}
