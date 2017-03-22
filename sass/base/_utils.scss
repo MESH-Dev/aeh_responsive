@@ -18,3 +18,27 @@
 .u-pull-left {
   float: left;
 }
+
+.greybg{
+   background-color: #565656;
+}
+
+@mixin greytype{
+   color: #565656;
+}
+
+.redbg{
+   background-color: #F05135;
+}
+
+.tealbg{
+   background-color: #28BDB3;
+}
+
+.bluebg{
+   background-color: #0397D6;
+}
+
+.lightgreybg{
+   background-color: #AAAAAA;
+}
