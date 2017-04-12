@@ -328,27 +328,32 @@ li {
 }
 
 /* line 22, sass/base/_utils.scss */
-.greybg {
+.grey-bg {
   background-color: #565656;
 }
 
+/* line 26, sass/base/_utils.scss */
+.grey-type, #header .navigation ul li {
+  color: #565656;
+}
+
 /* line 30, sass/base/_utils.scss */
-.redbg {
+.red-bg {
   background-color: #F05135;
 }
 
 /* line 34, sass/base/_utils.scss */
-.tealbg {
+.teal-bg {
   background-color: #28BDB3;
 }
 
 /* line 38, sass/base/_utils.scss */
-.bluebg {
+.blue-bg {
   background-color: #0397D6;
 }
 
 /* line 42, sass/base/_utils.scss */
-.lightgreybg {
+.light-grey-bg {
   background-color: #AAAAAA;
 }
 
@@ -657,61 +662,66 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   box-sizing: border-box;
 }
 
-/* line 49, sass/modules/_buttons.scss */
+/* line 50, sass/modules/_buttons.scss */
+input.red-bg[type="submit"] {
+  background-color: #F05135;
+}
+
+/* line 55, sass/modules/_buttons.scss */
 .button:hover,
 button:hover {
   outline: 0;
 }
 
-/* line 57, sass/modules/_buttons.scss */
+/* line 63, sass/modules/_buttons.scss */
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
   outline: 0;
 }
 
-/* line 66, sass/modules/_buttons.scss */
+/* line 72, sass/modules/_buttons.scss */
 .button:focus,
 button:focus {
   outline: 0;
 }
 
-/* line 74, sass/modules/_buttons.scss */
+/* line 80, sass/modules/_buttons.scss */
 input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
   outline: 0;
 }
 
-/* line 83, sass/modules/_buttons.scss */
+/* line 89, sass/modules/_buttons.scss */
 .button.button-primary,
 button.button-primary {
   color: #fff;
 }
 
-/* line 91, sass/modules/_buttons.scss */
+/* line 97, sass/modules/_buttons.scss */
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
 }
 
-/* line 100, sass/modules/_buttons.scss */
+/* line 106, sass/modules/_buttons.scss */
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
 }
 
-/* line 108, sass/modules/_buttons.scss */
+/* line 114, sass/modules/_buttons.scss */
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
 }
 
-/* line 117, sass/modules/_buttons.scss */
+/* line 123, sass/modules/_buttons.scss */
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
 }
 
-/* line 125, sass/modules/_buttons.scss */
+/* line 131, sass/modules/_buttons.scss */
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
 }
-/* line 132, sass/modules/_buttons.scss */
+/* line 138, sass/modules/_buttons.scss */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
   padding: 6px 10px;
@@ -837,35 +847,46 @@ td:last-child {
   padding-right: 0;
 }
 
-/* line 2, sass/modules/_header.scss */
+/* line 1, sass/modules/_header.scss */
+#header {
+  height: 70px;
+}
+/* line 3, sass/modules/_header.scss */
 #header .navigation {
   float: right;
 }
-/* line 4, sass/modules/_header.scss */
+/* line 5, sass/modules/_header.scss */
 #header .navigation ul {
   float: right;
   font-family: 'Cabin', sans-serif;
 }
-/* line 7, sass/modules/_header.scss */
-#header .navigation ul a {
-  text-decoration: none;
-  height: 0px;
-}
-/* line 11, sass/modules/_header.scss */
+/* line 8, sass/modules/_header.scss */
 #header .navigation ul li {
-  color: #565656;
+  height: 64px;
   position: relative;
   overflow: hidden;
-  padding: 12px;
   display: inline-block;
   font-size: 20px;
+  line-height: 24px;
   font-weight: 600;
-  min-width: 128px;
+  min-width: 138px;
   margin-bottom: 0;
   margin-left: 8px;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-/* line 23, sass/modules/_header.scss */
+/* line 26, sass/modules/_header.scss */
+#header .navigation ul li a {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+/* line 33, sass/modules/_header.scss */
 #header .navigation ul li .colorswipe {
   position: absolute;
   width: 100%;
@@ -875,19 +896,30 @@ td:last-child {
   z-index: -1;
   left: 0;
 }
-/* line 32, sass/modules/_header.scss */
+/* line 42, sass/modules/_header.scss */
+#header .navigation ul li .nav-item-content {
+  position: absolute;
+  padding-left: 4px;
+  top: 6px;
+  transition: all 0.25s ease-in-out;
+}
+/* line 48, sass/modules/_header.scss */
 #header .navigation ul li:hover {
   color: #fff;
 }
-/* line 33, sass/modules/_header.scss */
+/* line 49, sass/modules/_header.scss */
 #header .navigation ul li:hover .colorswipe {
   top: 0;
 }
-/* line 38, sass/modules/_header.scss */
+/* line 52, sass/modules/_header.scss */
+#header .navigation ul li:hover .nav-item-content {
+  top: 12px;
+}
+/* line 57, sass/modules/_header.scss */
 #header .navigation ul li.hidden {
   display: none;
 }
-/* line 41, sass/modules/_header.scss */
+/* line 60, sass/modules/_header.scss */
 #header .navigation ul li span {
   display: block;
   font-size: 11px;
@@ -895,19 +927,73 @@ td:last-child {
   font-weight: 100;
   margin: 0;
 }
-/* line 50, sass/modules/_header.scss */
+/* line 69, sass/modules/_header.scss */
 #header .navigation #menu-primary-menu {
   margin: 10px 0 0 0;
 }
 
-/* line 56, sass/modules/_header.scss */
+/* line 75, sass/modules/_header.scss */
+#loginBoxPanel {
+  display: none;
+  float: left;
+  position: relative;
+  background-color: #565656;
+  width: 100%;
+  padding: 20px;
+}
+/* line 82, sass/modules/_header.scss */
+#loginBoxPanel #loginForm {
+  float: right;
+}
+/* line 84, sass/modules/_header.scss */
+#loginBoxPanel #loginForm label {
+  display: none;
+}
+/* line 87, sass/modules/_header.scss */
+#loginBoxPanel #loginForm input {
+  border-radius: 2px;
+  border: none;
+  margin: 5px 0;
+  padding: 10px 10px 10px 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 97, sass/modules/_header.scss */
+#loginBoxPanel #loginForm input.username {
+  background: url("https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/images/mail-icon.png") 10px 50% no-repeat #fff;
+}
+/* line 100, sass/modules/_header.scss */
+#loginBoxPanel #loginForm input.password {
+  background: url("https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/images/pass-icon.png") 10px 50% no-repeat #fff;
+}
+/* line 103, sass/modules/_header.scss */
+#loginBoxPanel #loginForm input[type="text"], #loginBoxPanel #loginForm input[type="password"] {
+  width: 210px;
+}
+/* line 106, sass/modules/_header.scss */
+#loginBoxPanel #loginForm input[type="submit"] {
+  width: 210px;
+  color: #FFFFFF;
+  line-height: normal;
+  padding: 10px;
+}
+/* line 111, sass/modules/_header.scss */
+#loginBoxPanel #loginForm input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* line 120, sass/modules/_header.scss */
 .logo {
   position: absolute;
   z-index: 100;
   top: 0;
 }
 
-/* line 62, sass/modules/_header.scss */
+/* line 126, sass/modules/_header.scss */
 #utility-nav {
   background: #e4e4e4;
   height: 30px;
@@ -915,60 +1001,60 @@ td:last-child {
   z-index: 6;
   display: block;
 }
-/* line 68, sass/modules/_header.scss */
+/* line 132, sass/modules/_header.scss */
 #utility-nav #TopMenu {
   float: right;
   position: relative;
 }
-/* line 71, sass/modules/_header.scss */
+/* line 135, sass/modules/_header.scss */
 #utility-nav #TopMenu #utils-nav {
   padding-top: 7px;
   margin-bottom: 0;
   font-size: 11px;
   margin-right: 20px;
 }
-/* line 76, sass/modules/_header.scss */
+/* line 140, sass/modules/_header.scss */
 #utility-nav #TopMenu #utils-nav li {
   display: inline;
   font-family: Georgia,Times,"Times New Roman", serif;
   margin-bottom: 0;
 }
-/* line 80, sass/modules/_header.scss */
+/* line 144, sass/modules/_header.scss */
 #utility-nav #TopMenu #utils-nav li a {
   color: #333;
   text-decoration: none;
 }
-/* line 83, sass/modules/_header.scss */
+/* line 147, sass/modules/_header.scss */
 #utility-nav #TopMenu #utils-nav li a:hover {
   color: #F05135;
 }
-/* line 87, sass/modules/_header.scss */
+/* line 151, sass/modules/_header.scss */
 #utility-nav #TopMenu #utils-nav li::after {
-  content: '/';
+  content: ' /';
 }
-/* line 91, sass/modules/_header.scss */
+/* line 155, sass/modules/_header.scss */
 #utility-nav #TopMenu #utils-nav li:last-of-type::after {
   content: '';
 }
 
-/* line 100, sass/modules/_header.scss */
+/* line 164, sass/modules/_header.scss */
 #searchlogin {
   float: right;
 }
-/* line 102, sass/modules/_header.scss */
+/* line 166, sass/modules/_header.scss */
 #searchlogin .search, #searchlogin .login {
   position: relative;
-  display: inline;
+  display: inline-block;
 }
-/* line 106, sass/modules/_header.scss */
+/* line 170, sass/modules/_header.scss */
 #searchlogin .login {
   vertical-align: top;
   background: #333;
   box-shadow: 1px 1px 5px 1px #999;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 25px;
   overflow: visible;
 }
-/* line 112, sass/modules/_header.scss */
+/* line 176, sass/modules/_header.scss */
 #searchlogin .login #loginButton {
   background-image: url(images/person-icon.png);
   background-repeat: no-repeat;
@@ -979,7 +1065,7 @@ td:last-child {
   overflow: visible;
   text-decoration: none;
 }
-/* line 129, sass/modules/_header.scss */
+/* line 193, sass/modules/_header.scss */
 #searchlogin .search > * {
   display: inline;
 }

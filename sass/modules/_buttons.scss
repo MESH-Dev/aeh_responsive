@@ -46,6 +46,12 @@ input {
   }
 }
 
+input.red-bg {
+  &[type="submit"]{
+     background-color: $red;
+ }
+}
+
 .button:hover,
 button:hover {
   //color: $dark-grey;

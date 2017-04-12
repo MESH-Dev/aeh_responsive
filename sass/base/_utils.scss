@@ -19,26 +19,26 @@
   float: left;
 }
 
-.greybg{
-   background-color: #565656;
+.grey-bg{
+   background-color: $grey;
 }
 
-@mixin greytype{
-   color: #565656;
+.grey-type{
+   color: $grey;
 }
 
-.redbg{
-   background-color: #F05135;
+.red-bg{
+   background-color: $red;
 }
 
-.tealbg{
-   background-color: #28BDB3;
+.teal-bg{
+   background-color: $teal;
 }
 
-.bluebg{
-   background-color: #0397D6;
+.blue-bg{
+   background-color: $blue;
 }
 
-.lightgreybg{
-   background-color: #AAAAAA;
+.light-grey-bg{
+   background-color: $light-grey;
 }

@@ -1,25 +1,35 @@
 #header{
+   height: 70px;
    .navigation{
       float: right;
       ul{
          float: right;
          font-family: 'Cabin', sans-serif;
-         a{
-            text-decoration: none;
-            height: 0px;
-         }
          li{
-            @include greytype;
+            @extend .grey-type;
+            height: 64px;
             position: relative;
             overflow: hidden;
-            padding: 12px;
+            // padding: 12px;
             display: inline-block;
             font-size: 20px;
+            line-height: 24px;
             font-weight: 600;
-            min-width: 128px;
+            min-width: 138px;
             margin-bottom: 0;
             margin-left: 8px;
+            -webkit-transition: color 0.2s ease-in-out;
+            -moz-transition: color 0.2s ease-in-out;
+            -ms-transition: color 0.2s ease-in-out;
+            -o-transition: color 0.2s ease-in-out;
             transition: color 0.2s ease-in-out;
+            a{
+               position: absolute;
+               display: block;
+               text-decoration: none;
+               height: 100%;
+               transition: all 0.2s ease-in-out;
+            }
             .colorswipe{
                position: absolute;
                width: 100%;
@@ -29,9 +39,18 @@
                z-index: -1;
                left: 0;
             }
+            .nav-item-content{
+               position: absolute;
+               padding-left: 4px;
+               top: 6px;
+               transition: all 0.25s ease-in-out;
+            }
             &:hover{
                .colorswipe{
                   top: 0;
+               }
+               .nav-item-content{
+                  top: 12px;
                }
                color: #fff;
             }
@@ -49,6 +68,51 @@
       }
       #menu-primary-menu{
          margin: 10px 0 0 0;
+      }
+   }
+}
+
+#loginBoxPanel{
+   display: none;
+   float: left;
+   position: relative;
+   background-color: $grey;
+   width: 100%;
+   padding: 20px;
+   #loginForm{
+      float: right;
+      label{
+         display: none;
+      }
+      input{
+         border-radius: 2px;
+         border: none;
+         margin: 5px 0;
+         padding: 10px 10px 10px 40px;
+         -webkit-transition: all 0.2s ease-in-out;
+         -moz-transition: all 0.2s ease-in-out;
+         -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+         transition: all 0.2s ease-in-out;
+         &.username{
+            background: url('https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/images/mail-icon.png') 10px 50% no-repeat #fff;
+         }
+         &.password{
+            background: url('https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/images/pass-icon.png') 10px 50% no-repeat #fff;
+         }
+         &[type="text"], &[type="password"]{
+            width: 210px;
+         }
+         &[type="submit"]{
+            width: 210px;
+            color: $white;
+            line-height: normal;
+            padding: 10px;
+            &:hover{
+               cursor: pointer;
+               opacity: 0.9;
+            }
+         }
       }
    }
 }
@@ -85,7 +149,7 @@
                }
             }
             &::after{
-               content: '/';
+               content: ' /';
             }
             &:last-of-type{
                &::after{
@@ -101,13 +165,13 @@
    float: right;
    .search, .login{
       position: relative;
-      display: inline;
+      display: inline-block;
    }
    .login{
       vertical-align: top;
       background: #333;
       box-shadow: 1px 1px 5px 1px #999;
-      padding: 5px 10px 5px 10px;
+      padding: 5px 25px;
       overflow: visible;
       #loginButton{
          background-image: url(images/person-icon.png);

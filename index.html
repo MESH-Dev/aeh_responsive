@@ -24,6 +24,9 @@
 		var siteDir = "https://essentialhospitals.org";
 	</script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="initial-scale=1.0">
@@ -83,12 +86,18 @@
 		<div class="container">
 			<a id="mobile-slide">Menu</a>
 			<div class="twelve columns navigation default-page">
-				<ul id="menu-primary-menu" class=""><a href="https://essentialhospitals.org/action/"><li id="menu-item-67" class="action menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">ACTION<span class="sub">Public Policy</span><div class="colorswipe redbg"></div>
-            </li></a><a href="https://essentialhospitals.org/quality/"><li id="menu-item-66" class="quality menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">QUALITY<span class="sub">Improving Our Hospitals</span><div class="colorswipe tealbg"></div>
-            </li></a><a href="https://essentialhospitals.org/education/"><li id="menu-item-475" class="education menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">EDUCATION<span class="sub">Training Health Care Leaders</span><div class="colorswipe greybg"></div>
-            </li></a><a href="https://essentialhospitals.org/essential-hospitals-institute/"><li id="menu-item-29347" class="institute menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">INSTITUTE<span class="sub">Research &#038; Transformation</span><div class="colorswipe bluebg"></div>
-            </li></a><a href="https://essentialhospitals.org/blog/"><li id="menu-item-563" class="blog menu-item menu-item-type-post_type menu-item-object-page">BLOG<span class="sub">Essential Insights</span><div class="colorswipe lightgreybg"></div>
-            </li></a><a href="https://essentialhospitals.org/about-americas-essential-hospitals/"><li id="menu-item-13790" class="hidden utility menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">About America&#8217;s Essential Hospitals<span class="sub"></span><div class="colorswipe"></div></li></a></ul>
+				<ul id="menu-primary-menu" class=""><a href="https://essentialhospitals.org/action/"><li id="menu-item-67" class="action menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">ACTION<span class="sub">Public Policy</span></div><div class="colorswipe red-bg"></div>
+            </li></a><a href="https://essentialhospitals.org/quality/"><li id="menu-item-66" class="quality menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">QUALITY<span class="sub">Improving Our Hospitals</span></div><div class="colorswipe teal-bg"></div>
+            </li></a><a href="https://essentialhospitals.org/education/"><li id="menu-item-475" class="education menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">EDUCATION<span class="sub">Training Health Care Leaders</span></div><div class="colorswipe grey-bg"></div>
+            </li></a><a href="https://essentialhospitals.org/essential-hospitals-institute/"><li id="menu-item-29347" class="institute menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">INSTITUTE<span class="sub">Research &#038; Transformation</span></div><div class="colorswipe blue-bg"></div>
+            </li></a><a href="https://essentialhospitals.org/blog/"><li id="menu-item-563" class="blog menu-item menu-item-type-post_type menu-item-object-page"><div class="nav-item-content">BLOG<span class="sub">Essential Insights</span></div><div class="colorswipe light-grey-bg"></div>
+            </li></a><a href="https://essentialhospitals.org/about-americas-essential-hospitals/"><li id="menu-item-13790" class="hidden utility menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">About America&#8217;s Essential Hospitals<span class="sub"></span></div><div class="colorswipe"></div></li></a></ul>
+            <!-- <ul id="menu-primary-menu" class=""><li id="menu-item-67" class="action menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://essentialhospitals.org/action/">ACTION<span class="sub">Public Policy</span>
+            </a><div class="colorswipe redbg"></div></li><li id="menu-item-66" class="quality menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://essentialhospitals.org/quality/">QUALITY<span class="sub">Improving Our Hospitals</span>
+            </a><div class="colorswipe tealbg"></div></li><li id="menu-item-475" class="education menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://essentialhospitals.org/education/">EDUCATION<span class="sub">Training Health Care Leaders</span><div class="colorswipe greybg"></div>
+            </a><div class="colorswipe greybg"></div></li><li id="menu-item-29347" class="institute menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://essentialhospitals.org/essential-hospitals-institute/">INSTITUTE<span class="sub">Research &#038; Transformation</span>
+            </a><div class="colorswipe bluebg"></div></li><li id="menu-item-563" class="blog menu-item menu-item-type-post_type menu-item-object-page"><a href="https://essentialhospitals.org/blog/">BLOG<span class="sub">Essential Insights</span>
+            </a><div class="colorswipe lightgreybg"></div></li><li id="menu-item-13790" class="hidden utility menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://essentialhospitals.org/about-americas-essential-hospitals/">About America&#8217;s Essential Hospitals<span class="sub"></span></a><div class="colorswipe"></div></li></ul> -->
          </div>
          <div class="clear"></div>
 		</div><!-- End of Container -->
@@ -121,7 +130,7 @@
 					</div>
 
 					<div class="button_div">
-						<div class="submit-reg"><input id="login_submit-top" type="submit" name="Submit" value="Sign In" class="buttons"></div>
+						<div class="submit-reg"><input id="login_submit-top" type="submit" name="Submit" value="Sign In" class="buttons red-bg"></div>
 					</div>
 
 					<div class="clear"></div>
@@ -1453,30 +1462,25 @@
 	<!-- END FOOTER -->
 </div>
 	</div>
-
-
-
-	<script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/plugins/add-users-to-posttype/filedrag.js?ver=4.7.3'></script>
+	<!-- <script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/plugins/add-users-to-posttype/filedrag.js?ver=4.7.3'></script>
 <script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
 <script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
-<script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-includes/js/comment-reply.min.js?ver=4.7.3'></script>
-<script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/js/jquery.tools.min.js?ver=1.0'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var AEH = {"ajaxurl":"https:\/\/essentialhospitals.org\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/functions/events.js?ver=1.0.0'></script>
-<script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+<script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-includes/js/comment-reply.min.js?ver=4.7.3'></script> -->
+<!-- <script type='text/javascript' src='https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/js/jquery.tools.min.js?ver=1.0'></script> -->
+<!-- <script type='text/javascript'> -->
+<!-- /* <![CDATA[ */ -->
+<!-- var AEH = {"ajaxurl":"https:\/\/essentialhospitals.org\/wp-admin\/admin-ajax.php"}; -->
+<!-- /* ]]> */ -->
+<!-- </script> -->
 
 
-	<script src="https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/js/scripts-josh.js"></script>
+	<!-- <script src="https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/js/scripts-josh.js"></script> -->
 
-	​<script type="text/javascript">
+	<!-- ​<script type="text/javascript">
 		var addthis_config = addthis_config||{};
 		addthis_config.data_track_addressbar = false;
 		addthis_config.data_track_clickback = false;
-	</script>
+	</script> -->
 
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1489,8 +1493,7 @@ var AEH = {"ajaxurl":"https:\/\/essentialhospitals.org\/wp-admin\/admin-ajax.php
   ga('send', 'pageview');
 
 </script>
-
-
+<script src="main.js"></script>
 
 
 
