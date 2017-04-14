@@ -39,6 +39,7 @@
 	<!-- CSS
     ================================================== -->
 	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
 </head>
 <body class="home page-template page-template-templates page-template-template-homepage page-template-templatestemplate-homepage-php page page-id-29" id="logged-out">
 
@@ -49,7 +50,7 @@
 		<div class="container">
 			 <div class="columns-12 utils">
              <div id="searchlogin">
-             	<div id="search" class="search">
+             	<div id="searchButton" class="search">
              		<!-- <div id="searchclose">x</div> -->
              		<img src="https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/images/search.png" />
              		<!-- <div id="searchWrap">
@@ -82,9 +83,25 @@
          <a href="https://essentialhospitals.org" title="America&#039;s Essential Hospitals"><img src="https://2c4xez132caw2w3cpr1il98fssf-wpengine.netdna-ssl.com/wp-content/themes/EssentialHospitals/images/logo.png" title="America&#039;s Essential Hospitals"></a>
       </div>
    </div>
+	<a id="mobile-menu-trigger" href="#sidr">MENU</a>
+	<div id="sidr">
+		<a class="login" href="https://essentialhospitals.org/membernetwork/member-login/"><img src='images/person-icon.png'/>Sign In</a>
+		<ul id="mobile-menu" class=""><a href="https://essentialhospitals.org/action/"><li id="menu-item-67" class="action menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">ACTION<span class="sub">Public Policy</span></div><div class="colorswipe red-bg"></div>
+		</li></a><a href="https://essentialhospitals.org/quality/"><li id="menu-item-66" class="quality menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">QUALITY<span class="sub">Improving Our Hospitals</span></div><div class="colorswipe teal-bg"></div>
+		</li></a><a href="https://essentialhospitals.org/education/"><li id="menu-item-475" class="education menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">EDUCATION<span class="sub">Training Health Care Leaders</span></div><div class="colorswipe grey-bg"></div>
+		</li></a><a href="https://essentialhospitals.org/essential-hospitals-institute/"><li id="menu-item-29347" class="institute menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">INSTITUTE<span class="sub">Research &#038; Transformation</span></div><div class="colorswipe blue-bg"></div>
+		</li></a><a href="https://essentialhospitals.org/blog/"><li id="menu-item-563" class="blog menu-item menu-item-type-post_type menu-item-object-page"><div class="nav-item-content">BLOG<span class="sub">Essential Insights</span></div><div class="colorswipe light-grey-bg"></div>
+		</li></a></ul>
+			<ul class="utils-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13758"><a href="https://essentialhospitals.org/about-americas-essential-hospitals/">about</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19529"><a href="http://essentialhospitals.org/events/">in-person events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12068"><a href="https://essentialhospitals.org/sponsor-americas-essential-hospitals/">sponsorship opportunities</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14118"><a href="https://essentialhospitals.org/newsroom/">newsroom</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13759"><a href="https://essentialhospitals.org/about-americas-essential-hospitals/contact-us/">contact us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13760"><a href="https://essentialhospitals.org/about-americas-essential-hospitals/listing-of-americas-essential-hospitals-members/">essential hospitals list</a></li>
+</ul>
+	</div>
 	<div id="header" class="fullwidth">
 		<div class="container">
-			<a id="mobile-slide">Menu</a>
 			<div class="twelve columns navigation default-page">
 				<ul id="menu-primary-menu" class=""><a href="https://essentialhospitals.org/action/"><li id="menu-item-67" class="action menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">ACTION<span class="sub">Public Policy</span></div><div class="colorswipe red-bg"></div>
             </li></a><a href="https://essentialhospitals.org/quality/"><li id="menu-item-66" class="quality menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><div class="nav-item-content">QUALITY<span class="sub">Improving Our Hospitals</span></div><div class="colorswipe teal-bg"></div>
@@ -103,6 +120,7 @@
 		</div><!-- End of Container -->
 		<div class="clear"></div>
 	</div>
+<div class="panels-wrapper">
 	<div id="loginBoxPanel">
 	<div class="container">
 	    <div id='loginForm'>
@@ -112,36 +130,34 @@
 			</div>
 
 
-	      <div id="wpmem_login">
 
-			<form action="" id="loginform-top" method="POST" class="form">
-				<fieldset>
 
-					<label for="username">Email</label>
-					<div class="div_text">
+				<form action="" id="loginform-top" method="POST" class="form">
+					<fieldset>
+
+						<label for="username">Email</label>
 						<input name="username" type="text" id="username" value="" class="username" placeholder="email address">
-
-					</div>
-
-					<label for="passw">Password.</label>
-					<div class="div_text">
+						<div class="clearer"></div>
+						<label for="passw">Password.</label>
 						<input name="passw" type="password" id="passw" class="password" placeholder="password">
+						<div class="clearer"></div>
+						<input id="login_submit-top" type="submit" name="Submit" value="Sign In" class="buttons red-bg">
+						<div align="right" class="pass-reg "><a href="https://essentialhospitals.org/membernetwork/reset-password/">Forgot your password?</a></div>
+						<div align="right" class="new-reg ">Don't have an account?&nbsp;<a href="https://essentialhospitals.org/membernetwork/registration/">Create Account</a></div>
 
-					</div>
-
-					<div class="button_div">
-						<div class="submit-reg"><input id="login_submit-top" type="submit" name="Submit" value="Sign In" class="buttons red-bg"></div>
-					</div>
-
-					<div class="clear"></div>
-					<div align="right" class="pass-reg "><a href="https://essentialhospitals.org/membernetwork/reset-password/">Forgot your password?</a></div>
-					<div align="right" class="new-reg ">Don't have an account?&nbsp;<a href="https://essentialhospitals.org/membernetwork/registration/">Create Account</a></div>
-					<div class="clear"></div>
-
-				</fieldset>
-			</form>
-   		</div>
-      </div>
+					</fieldset>
+				</form>
+	      </div>
+		</div>
+	</div>
+	<div id="searchPanel">
+		<div class="container">
+			<div class="search-wrap">
+				 <form id='searchForm'>
+					 <input id="searchInput" type="text"><input type="submit" value="Search">
+				</form>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -1493,6 +1509,7 @@
   ga('send', 'pageview');
 
 </script>
+<script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
 <script src="main.js"></script>
 
 
