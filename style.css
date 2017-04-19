@@ -1269,3 +1269,31 @@ td:last-child {
 #searchlogin .search > * {
   display: inline;
 }
+
+/* line 1, sass/modules/_layout.scss */
+.p_hover {
+  display: none;
+}
+
+/* line 6, sass/modules/_layout.scss */
+#people .scrollWrapper {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+/* line 11, sass/modules/_layout.scss */
+#people .scrollWrapper .scrollableArea {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 17, sass/modules/_layout.scss */
+#people .people_box {
+  width: 300px;
+  height: 300px;
+  display: inline;
+  float: left;
+  margin: 0px 7px;
+  padding: 0px;
+}

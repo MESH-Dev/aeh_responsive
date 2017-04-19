@@ -1,0 +1,25 @@
+.p_hover{
+   display: none;
+}
+
+#people{
+   .scrollWrapper{
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      .scrollableArea{
+         height: 100%;
+         margin: 0 auto;
+         position: relative;
+      }
+   }
+   .people_box{
+      width: 300px;
+      height: 300px;
+      display: inline;
+      float: left;
+      margin: 0px 7px;
+      padding: 0px;
+   }
+}

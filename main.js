@@ -17,4 +17,9 @@ $(function(){
    $('#mobile-menu-trigger').sidr({
       side: 'right'
    });
+
+   $('div#people').smoothDivScroll({
+      startAtElementId: 'starter',
+      touchScrolling: true
+   });
 });
