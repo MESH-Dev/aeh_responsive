@@ -14,6 +14,8 @@ $bp-smaller-than-tablet : "max-width: 750px" !default;
 $bp-smaller-than-mobile : "max-width: 480px" !default;
 $bp-smaller-than-phablet   : "max-width: 550px" !default;
 
+$header-bp : "max-width: 1015px";
+
 // Colors
 $red: #F05135;
 $white: #FFFFFF !default;

@@ -961,7 +961,7 @@ td:last-child {
   font-size: 1em;
   font-weight: 600;
   padding: 12px;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (max-width: 1015px) {
   /* line 80, sass/modules/_header.scss */
@@ -1357,12 +1357,19 @@ td:last-child {
 #people .people_box:hover > .p_hover {
   display: block;
 }
+@media screen and (max-width: 1015px) {
+  /* line 1, sass/modules/_layout.scss */
+  #people {
+    margin-top: 100px;
+  }
+}
 
-/* line 75, sass/modules/_layout.scss */
+/* line 78, sass/modules/_layout.scss */
 .featured {
   position: relative;
+  clear: both;
 }
-/* line 77, sass/modules/_layout.scss */
+/* line 81, sass/modules/_layout.scss */
 .featured #banner_text {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1374,25 +1381,25 @@ td:last-child {
   font-family: Georgia, times, serif;
   color: #565656;
 }
-/* line 87, sass/modules/_layout.scss */
+/* line 91, sass/modules/_layout.scss */
 .featured #banner_text .orange {
   color: #F05135;
 }
-/* line 89, sass/modules/_layout.scss */
+/* line 93, sass/modules/_layout.scss */
 .featured #banner_text .orange .bold {
   font-weight: bold;
 }
-/* line 93, sass/modules/_layout.scss */
+/* line 97, sass/modules/_layout.scss */
 .featured #banner_text a {
   font-family: Georgia, times, serif;
 }
-/* line 96, sass/modules/_layout.scss */
+/* line 100, sass/modules/_layout.scss */
 .featured #banner_text .secondary {
   font-size: 18px;
   font-weight: bold;
   display: block;
 }
-/* line 101, sass/modules/_layout.scss */
+/* line 105, sass/modules/_layout.scss */
 .featured #banner_text a {
   color: #565656;
   outline: none;
