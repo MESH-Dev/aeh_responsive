@@ -1514,12 +1514,16 @@ td:last-child {
   text-decoration: none;
   color: #FFFFFF;
 }
-/* line 92, sass/modules/_footer.scss */
+/* line 91, sass/modules/_footer.scss */
+#footer a:hover {
+  opacity: 0.8;
+}
+/* line 95, sass/modules/_footer.scss */
 #footer .hidden {
   display: none;
 }
 
-/* line 97, sass/modules/_footer.scss */
+/* line 100, sass/modules/_footer.scss */
 .serif, .serif a {
   font-family: Georgia, Times, serif;
 }
