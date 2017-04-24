@@ -1,0 +1,99 @@
+#footer{
+   background-color: $dark-grey;
+   color: $white;
+   padding: 10px 0;
+   .footHead{
+      font-weight: bold;
+      text-transform: uppercase;
+   }
+   #footer_address{
+      font-weight: 400;
+      background-color: $dust;
+      color: $red;
+      padding: 10px;
+   }
+   #footer_contact{
+      padding: 10px;
+      color: $light-grey;
+      .contact-section{
+         a{
+            font-size: 12px;
+            display: block;
+         }
+      }
+   }
+   #footer_columns{
+      padding: 10px 20px;
+      .col-row{
+         margin-bottom: 10px;
+      }
+      .desc-col{
+         width: 120px;
+         display: inline-block;
+         color: $light-grey;
+         vertical-align: top;
+         font-weight: 400;
+         .textwidget{
+            line-height: 13px;
+            font-size: 13px;
+         }
+      }
+      h4{
+         margin-bottom: 4px;
+         line-height: 18px;
+         a{
+            font-size: 13px;
+            font-weight: 700;
+         }
+      }
+   }
+   #footer-brandSocial{
+      width: 100%;
+      text-align: right;
+      #social{
+         float: right;
+         margin: 20px;
+      }
+      #footer_logo{
+         float: right;
+      }
+      #menu-social-footer{
+         li{
+            list-style-type: none;
+            float: left;
+            height: 28px;
+            width: 28px;
+            &.facebook-i a{
+               background-position: -24px 0;
+            }
+            &.twitter-i a{
+               background-position: -48px 0;
+            }
+            &.email-i a{
+               background-position: -96px 0;
+            }
+            a{
+               background: url(https://essentialhospitals.org/wp-content/themes/EssentialHospitals/images/social_icons.png) no-repeat;
+               display: block;
+               height: 100%;
+               width: 100%;
+               text-indent: -5000px;
+               text-align: left;
+            }
+         }
+      }
+   }
+   a{
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+      color: $white;
+   }
+   .hidden{
+      display: none;
+   }
+}
+
+.serif, .serif a{
+   font-family: Georgia, Times, serif;
+}
