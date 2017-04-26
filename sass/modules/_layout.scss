@@ -1,3 +1,4 @@
+// Home
 #people{
    position: relative;
    .scrollWrapper{
@@ -109,3 +110,226 @@
       }
    }
 }
+// Home
+
+// Text Page
+#featured-img{
+   background-size: cover;
+   background-position: center center;
+   color: $white;
+   position: relative;
+   clear: both;
+   height: 222px;
+   #featured-intro{
+      text-transform: uppercase;
+      padding: 50px 10px 0px 10px;
+      h3{
+         font-size: 28px;
+         font-weight: bold;
+         line-height: 38px;
+         span{
+            color: $red;
+         }
+      }
+   }
+   @media screen and (max-width: 1015px){
+      margin-top: 100px;
+   }
+}
+
+#featured-img.page-single.policy{
+   border-top: 7px solid $red;
+}
+
+#mobilePageNav{
+   width: 90%;
+   display: none;
+   margin: 10px auto;
+   @media screen and (max-width: 1024px){
+      display: block;
+   }
+}
+
+#pageNav{
+   @media screen and (max-width: 1024px){
+      display: none;
+   }
+   background-color: $dust;
+   clear: both;
+   height: 30px;
+   position: relative;
+   margin: 10px 0;
+   ul{
+      list-style: none;
+      margin: 6px 0 0px 8px;
+      li{
+         display: inline-block;
+         a{
+            margin-right: 11px;
+            border-right: 2px solid $grey;
+            position: relative;
+            color: $grey;
+            font-weight: 400;
+            margin: 4px 8px 4px 0;
+            padding-right: 8px;
+         }
+      }
+   }
+}
+
+#breadcrumbs{
+   border-top: 1px solid $light-grey;
+   border-bottom: 1px solid $light-grey;
+   padding: 5px 10px;
+   ul{
+      margin: 0;
+      display: inline-block;
+      li{
+         list-style: none;
+         font-family: Georgia, times, serif;
+         display: inline;
+         a{
+            color: $grey;
+            font-family: Georgia, times, serif;
+            font-style: italic;
+            font-size: 13px;
+            margin-right: 8px;
+            display: inline-block;
+            &::after{
+               content: ' >';
+            }
+            @media screen and (max-width: 605px){
+               display: block;
+            }
+         }
+         &.last{
+            a{
+               &::after{
+                  content: '';
+               }
+            }
+         }
+      }
+   }
+}
+
+.graybarright, .graybarleft{
+   @media screen and (max-width: 1200px){
+      display: none;
+   }
+}
+
+.main-content{
+   position: relative;
+   .graybarright{
+      position: absolute;
+      top: 4px;
+      border-right: 1px solid $dust;
+      left: -8px;
+      height: 100%;
+   }
+   .graybarleft{
+      position: absolute;
+      top: 4px;
+      border-left: 1px solid $dust;
+      right: -8px;
+      height: 100%;
+   }
+}
+
+.main-content-columns{
+   margin-top: 15px;
+   .content-column{
+      height: 100%;
+      border-top: 8px solid $dust;
+      padding: 15px;
+      border-left: 1px solid $dust;
+      h2{
+         font-size: 18px;
+         font-weight: bold;
+         line-height: 26px;
+         margin-bottom: 10px;
+      }
+      &:first-of-type{
+         border-left: 0px;
+      }
+   }
+}
+
+.page-single.policy{
+   #contentSecondary{
+      h2{
+         color: $red;
+      }
+      a{
+         color: $red;
+         &:hover{
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+#base{
+   border-top: 1px solid $dust;
+   font-size: 13px;
+   margin: 0 auto 6px auto;
+   padding-top: 8px;
+   position: relative;
+   a{
+      color: $grey;
+      font-family: Georgia, serif;
+      font-size: 12px;
+      font-style: italic;
+      text-decoration: none;
+   }
+   h2{
+      color: $red;
+      font: 22px/33px "Cabin", sans-serif;
+      text-transform: uppercase;
+      word-spacing: 1px;
+      font-weight: bold;
+   }
+   .gutter{
+      padding: 10px;
+      background-color: $dust;
+   }
+   .graybarleft{
+      position: absolute;
+      height: 100%;
+      border-left: 1px solid $dust;
+      top: 0;
+      left: -8px;
+   }
+   .graybarright{
+      position: absolute;
+      height: 100%;
+      border-right: 1px solid $dust;
+      top: 0;
+      right: -8px;
+   }
+   .sidebar{
+      padding: 10px;
+      border-left: 1px solid $light-grey;
+      .sidesection.bottom{
+         border-top: 1px solid $light-grey;
+         color: $red;
+         padding-top: 10px;
+      }
+      .sidesection.top{
+         color: $blue;
+      }
+   }
+}
+
+.addthis_toolbox{
+   a{
+      span{
+         svg{
+            background-color: $white;
+            fill: $light-grey;
+         }
+      }
+   }
+}
+// Text Page

@@ -22,4 +22,12 @@ $(function(){
       startAtElementId: 'starter',
       touchScrolling: true
    });
+
+   var mainContentHeight = document.getElementById('main-content-container').offsetHeight;
+   // console.log(document.documentElement.clientWidth);
+   if (document.documentElement.clientWidth > 750){
+      $('.content-column').each(function(){
+         $(this).height(mainContentHeight);
+      });
+   };
 });

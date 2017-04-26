@@ -1272,31 +1272,31 @@ td:last-child {
   clear: both;
 }
 
-/* line 1, sass/modules/_layout.scss */
+/* line 2, sass/modules/_layout.scss */
 #people {
   position: relative;
 }
-/* line 3, sass/modules/_layout.scss */
+/* line 4, sass/modules/_layout.scss */
 #people .scrollWrapper {
   height: 100%;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-/* line 8, sass/modules/_layout.scss */
+/* line 9, sass/modules/_layout.scss */
 #people .scrollWrapper .scrollableArea {
   margin: 0 auto;
   position: relative;
 }
-/* line 13, sass/modules/_layout.scss */
+/* line 14, sass/modules/_layout.scss */
 #people .scrollingHotSpotLeft {
   left: 0;
 }
-/* line 16, sass/modules/_layout.scss */
+/* line 17, sass/modules/_layout.scss */
 #people .scrollingHotSpotRight {
   right: 0;
 }
-/* line 19, sass/modules/_layout.scss */
+/* line 20, sass/modules/_layout.scss */
 #people .scrollingHotSpotLeft, #people .scrollingHotSpotRight {
   background-color: #FFFFFF;
   opacity: 0.35;
@@ -1307,7 +1307,7 @@ td:last-child {
   top: 0;
   z-index: 1;
 }
-/* line 29, sass/modules/_layout.scss */
+/* line 30, sass/modules/_layout.scss */
 #people .people_box {
   width: 300px;
   height: 300px;
@@ -1317,7 +1317,7 @@ td:last-child {
   padding: 0px;
   position: relative;
 }
-/* line 37, sass/modules/_layout.scss */
+/* line 38, sass/modules/_layout.scss */
 #people .people_box .p_hover {
   position: absolute;
   display: none;
@@ -1327,7 +1327,7 @@ td:last-child {
   background-color: rgba(255, 255, 255, 0.8);
   height: 100%;
 }
-/* line 45, sass/modules/_layout.scss */
+/* line 46, sass/modules/_layout.scss */
 #people .people_box .p_hover .p_name {
   color: #FFFFFF;
   background-color: #F05135;
@@ -1335,41 +1335,41 @@ td:last-child {
   font-size: 18px;
   padding: 5px;
 }
-/* line 52, sass/modules/_layout.scss */
+/* line 53, sass/modules/_layout.scss */
 #people .people_box .p_hover .p_info {
   padding: 10px;
   font-size: 18px;
   font-weight: bold;
   color: #565656;
 }
-/* line 58, sass/modules/_layout.scss */
+/* line 59, sass/modules/_layout.scss */
 #people .people_box .p_hover .p_occupation, #people .people_box .p_hover .p_hospital {
   display: block;
   line-height: 18px;
   margin-bottom: 6px;
 }
-/* line 63, sass/modules/_layout.scss */
+/* line 64, sass/modules/_layout.scss */
 #people .people_box .p_hover p {
   padding: 0 10px;
   font-size: 13px;
 }
-/* line 69, sass/modules/_layout.scss */
+/* line 70, sass/modules/_layout.scss */
 #people .people_box:hover > .p_hover {
   display: block;
 }
 @media screen and (max-width: 1015px) {
-  /* line 1, sass/modules/_layout.scss */
+  /* line 2, sass/modules/_layout.scss */
   #people {
     margin-top: 100px;
   }
 }
 
-/* line 78, sass/modules/_layout.scss */
+/* line 79, sass/modules/_layout.scss */
 .featured {
   position: relative;
   clear: both;
 }
-/* line 81, sass/modules/_layout.scss */
+/* line 82, sass/modules/_layout.scss */
 .featured #banner_text {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1381,29 +1381,284 @@ td:last-child {
   font-family: Georgia, times, serif;
   color: #565656;
 }
-/* line 91, sass/modules/_layout.scss */
+/* line 92, sass/modules/_layout.scss */
 .featured #banner_text .orange {
   color: #F05135;
 }
-/* line 93, sass/modules/_layout.scss */
+/* line 94, sass/modules/_layout.scss */
 .featured #banner_text .orange .bold {
   font-weight: bold;
 }
-/* line 97, sass/modules/_layout.scss */
+/* line 98, sass/modules/_layout.scss */
 .featured #banner_text a {
   font-family: Georgia, times, serif;
 }
-/* line 100, sass/modules/_layout.scss */
+/* line 101, sass/modules/_layout.scss */
 .featured #banner_text .secondary {
   font-size: 18px;
   font-weight: bold;
   display: block;
 }
-/* line 105, sass/modules/_layout.scss */
+/* line 106, sass/modules/_layout.scss */
 .featured #banner_text a {
   color: #565656;
   outline: none;
   text-decoration: none;
+}
+
+/* line 116, sass/modules/_layout.scss */
+#featured-img {
+  background-size: cover;
+  background-position: center center;
+  color: #FFFFFF;
+  position: relative;
+  clear: both;
+  height: 222px;
+}
+/* line 123, sass/modules/_layout.scss */
+#featured-img #featured-intro {
+  text-transform: uppercase;
+  padding: 50px 10px 0px 10px;
+}
+/* line 126, sass/modules/_layout.scss */
+#featured-img #featured-intro h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+}
+/* line 130, sass/modules/_layout.scss */
+#featured-img #featured-intro h3 span {
+  color: #F05135;
+}
+@media screen and (max-width: 1015px) {
+  /* line 116, sass/modules/_layout.scss */
+  #featured-img {
+    margin-top: 100px;
+  }
+}
+
+/* line 140, sass/modules/_layout.scss */
+#featured-img.page-single.policy {
+  border-top: 7px solid #F05135;
+}
+
+/* line 144, sass/modules/_layout.scss */
+#mobilePageNav {
+  width: 90%;
+  display: none;
+  margin: 10px auto;
+}
+@media screen and (max-width: 1024px) {
+  /* line 144, sass/modules/_layout.scss */
+  #mobilePageNav {
+    display: block;
+  }
+}
+
+/* line 153, sass/modules/_layout.scss */
+#pageNav {
+  background-color: #e3e3e3;
+  clear: both;
+  height: 30px;
+  position: relative;
+  margin: 10px 0;
+}
+@media screen and (max-width: 1024px) {
+  /* line 153, sass/modules/_layout.scss */
+  #pageNav {
+    display: none;
+  }
+}
+/* line 162, sass/modules/_layout.scss */
+#pageNav ul {
+  list-style: none;
+  margin: 6px 0 0px 8px;
+}
+/* line 165, sass/modules/_layout.scss */
+#pageNav ul li {
+  display: inline-block;
+}
+/* line 167, sass/modules/_layout.scss */
+#pageNav ul li a {
+  margin-right: 11px;
+  border-right: 2px solid #565656;
+  position: relative;
+  color: #565656;
+  font-weight: 400;
+  margin: 4px 8px 4px 0;
+  padding-right: 8px;
+}
+
+/* line 180, sass/modules/_layout.scss */
+#breadcrumbs {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 10px;
+}
+/* line 184, sass/modules/_layout.scss */
+#breadcrumbs ul {
+  margin: 0;
+  display: inline-block;
+}
+/* line 187, sass/modules/_layout.scss */
+#breadcrumbs ul li {
+  list-style: none;
+  font-family: Georgia, times, serif;
+  display: inline;
+}
+/* line 191, sass/modules/_layout.scss */
+#breadcrumbs ul li a {
+  color: #565656;
+  font-family: Georgia, times, serif;
+  font-style: italic;
+  font-size: 13px;
+  margin-right: 8px;
+  display: inline-block;
+}
+/* line 198, sass/modules/_layout.scss */
+#breadcrumbs ul li a::after {
+  content: ' >';
+}
+@media screen and (max-width: 605px) {
+  /* line 191, sass/modules/_layout.scss */
+  #breadcrumbs ul li a {
+    display: block;
+  }
+}
+/* line 207, sass/modules/_layout.scss */
+#breadcrumbs ul li.last a::after {
+  content: '';
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 216, sass/modules/_layout.scss */
+  .graybarright, .graybarleft {
+    display: none;
+  }
+}
+
+/* line 222, sass/modules/_layout.scss */
+.main-content {
+  position: relative;
+}
+/* line 224, sass/modules/_layout.scss */
+.main-content .graybarright {
+  position: absolute;
+  top: 4px;
+  border-right: 1px solid #e3e3e3;
+  left: -8px;
+  height: 100%;
+}
+/* line 231, sass/modules/_layout.scss */
+.main-content .graybarleft {
+  position: absolute;
+  top: 4px;
+  border-left: 1px solid #e3e3e3;
+  right: -8px;
+  height: 100%;
+}
+
+/* line 240, sass/modules/_layout.scss */
+.main-content-columns {
+  margin-top: 15px;
+}
+/* line 242, sass/modules/_layout.scss */
+.main-content-columns .content-column {
+  height: 100%;
+  border-top: 8px solid #e3e3e3;
+  padding: 15px;
+  border-left: 1px solid #e3e3e3;
+}
+/* line 247, sass/modules/_layout.scss */
+.main-content-columns .content-column h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+/* line 253, sass/modules/_layout.scss */
+.main-content-columns .content-column:first-of-type {
+  border-left: 0px;
+}
+
+/* line 261, sass/modules/_layout.scss */
+.page-single.policy #contentSecondary h2 {
+  color: #F05135;
+}
+/* line 264, sass/modules/_layout.scss */
+.page-single.policy #contentSecondary a {
+  color: #F05135;
+}
+/* line 266, sass/modules/_layout.scss */
+.page-single.policy #contentSecondary a:hover {
+  text-decoration: none;
+}
+
+/* line 273, sass/modules/_layout.scss */
+#base {
+  border-top: 1px solid #e3e3e3;
+  font-size: 13px;
+  margin: 0 auto 6px auto;
+  padding-top: 8px;
+  position: relative;
+}
+/* line 279, sass/modules/_layout.scss */
+#base a {
+  color: #565656;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: none;
+}
+/* line 286, sass/modules/_layout.scss */
+#base h2 {
+  color: #F05135;
+  font: 22px/33px "Cabin", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-weight: bold;
+}
+/* line 293, sass/modules/_layout.scss */
+#base .gutter {
+  padding: 10px;
+  background-color: #e3e3e3;
+}
+/* line 297, sass/modules/_layout.scss */
+#base .graybarleft {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #e3e3e3;
+  top: 0;
+  left: -8px;
+}
+/* line 304, sass/modules/_layout.scss */
+#base .graybarright {
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid #e3e3e3;
+  top: 0;
+  right: -8px;
+}
+/* line 311, sass/modules/_layout.scss */
+#base .sidebar {
+  padding: 10px;
+  border-left: 1px solid #aaa;
+}
+/* line 314, sass/modules/_layout.scss */
+#base .sidebar .sidesection.bottom {
+  border-top: 1px solid #aaa;
+  color: #F05135;
+  padding-top: 10px;
+}
+/* line 319, sass/modules/_layout.scss */
+#base .sidebar .sidesection.top {
+  color: #0397D6;
+}
+
+/* line 328, sass/modules/_layout.scss */
+.addthis_toolbox a span svg {
+  background-color: #FFFFFF;
+  fill: #aaa;
 }
 
 /* line 1, sass/modules/_footer.scss */
